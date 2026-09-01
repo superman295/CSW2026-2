@@ -6,39 +6,69 @@
     <title>Aula 04</title>
 </head>
 <body>
-    
-    <h1>Principais Formatações</h1>
-<h2>Negrito/Destaque</h2>
-<p> <b>Na frase temos uma parte do texto em negrito usando a tag B não semãntica</b>  </p>
-<p><strong>Na frase temos uma parte do texto em negrito usando a tag B com semãntica</strong></p>
+    <h1>Principais formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Na frase temos uma <b>parte do texto em negrito</b> usando a tag B (não semântica)</p>
+    <p>Na frase temos uma <strong>parte do texto em negrito</strong> usando a tag strong (com semântica)</p>
+    <h2>Itálico/Ênfase</h2>
+    <p>Na frase vamos entrar com uma palavra em <i>Itálico</i> usando a tag i (sem semântica)</p>
+    <p>Na frase vamos entrar com uma palavra em <em>Itálico</em> usando a tag EM (com semântica)</p>
+    <h2>Texto marcador</h2>
+    <p>aqui temos um texto em destaque <mark>de marcador de texto</mark> usando mark</p>
+    <p>aqui temos um texto em destaque <mark style="background-color: red;">de marcador de texto</mark> usando mark</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>aqui estamos trabalhando com um <big>texto grande</big> e aqui com um <small> pequeno nesta frase</small></p>
+    <h2>Texto deletado</h2>
+    <p>nesta frase temos um exemplo <del> de texto deletado </del> usando a tag DEL (com semântica)</p>
+    <h2>Texto inserido</h2>
+    <p>nesta frase temos um exemplo <u> de texto inserido </u> usando a tag U (sem semântica)</p>
+    <p>nesta frase temos um exemplo <ins> de texto inserido </ins> usando a tag INS (com semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>nesta frase temos um exemplo <sup> de texto sobrescrito </sup> usando a tag SUP (com semântica)</p>
+    <h2>Texto subscrito</h2>
+    <p>nesta frase temos um exemplo <sub> de texto subscrito </sub> usando a tag SUB (com semântica)</p>
+    <h2>Trecho de código fonte</h2>
+    <p>neste exemplo vou demonstrar um trecho de um código</p>
+    <p>inserindo o comando <code>document.getElementById('edtCodigo')</code> que é um comando de java script </p>
+    <pre>
+        <code>
+            import math
 
-<h1>Itálico/Enfase</h1>
-<p><i>Na frase vamos entrar com uma palavra em itálico usando a tag i (não semántica) </i></p>
-<em>Na frase vamos entrar com uma palavra em itálico usando a tag EM (com semântica)</em>
+# Coeficientes da equação
+a = float(input("Digite o valor de a: "))
+b = float(input("Digite o valor de b: "))
+c = float(input("Digite o valor de c: "))
 
-<P></P>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+# Calculando o delta
+delta = b**2 - 4*a*c
 
+print(f"Delta = {delta}")
 
+# Verificando as raízes
+if delta > 0:
+    x1 = (-b + math.sqrt(delta)) / (2*a)
+    x2 = (-b - math.sqrt(delta)) / (2*a)
+    print(f"Raízes reais e diferentes: x1 = {x1}, x2 = {x2}")
+elif delta == 0:
+    x = -b / (2*a)
+    print(f"Raiz real e única: x = {x}")
+else:
+    real = -b / (2*a)
+    imag = math.sqrt(-delta) / (2*a)
+    print(f"Raízes complexas: x1 = {real} + {imag}i, x2 = {real} - {imag}i")
+        </code>
+    </pre>
+    <h2>Citações (quotation) simples </h2>
+    <p>Segundo Steve jobs <q> A tecnologia move o mundo </q></p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <h2>Citações completas (livros)</h2>
+    <p>Segundo Sandra Kussunoki<blockquote>
+        Dados existentes sobre intervenções cirúrgicas nos corpos conteporâneos visando à obtennção de um corpo mais próximmo do padrão estético tais como lipoaspiração, prótese de silicone, entre outras, comprovam essa busca obssesiva pelo  ideal de perfeição, que é baseado principalmente na magreza, e explicitam a centralidade do culto ao corpo na pós-moderninade.</p>
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>estamos estudando  <abbr title="Hypertext Markup Language ">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="ltr">estou estudando HTML</bdo></p>
+    <p><bdo dir="rtl">estou estudando HTML</bdo></p>
 </body>
 </html>
