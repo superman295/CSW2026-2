@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vila Velha - Página da Cidade</title>
+</head>
+
+<body>
+
+  <!-- ================= LINK DE VOLTAR (com imagem) ================= -->
+  <p>
+    <a href="../index.html" target="_self" rel="prev">
+      <img src="../img/home.png"
+           alt="Voltar para a página inicial"
+           width="40">
+    </a>
+    <a href="../index.html" target="_self" rel="prev">
+      Voltar para a página inicial
+    </a>
+  </p>
+
+  <!--
+    ATENÇÃO AOS CAMINHOS:
+    Estamos dentro de cidades/vila-velha.html
+    Para chegar em index.html (que está na raiz), subimos um nível com "../"
+
+    ../index.html  → sobe de cidades/ e chama index.html
+    ../img/home.png → sobe de cidades/ e entra em img/ para pegar home.png
+
+    rel="prev" → indica que é a página anterior
+  -->
+
+  <h1>Vila Velha</h1>
+
+  <p>
+    Vila Velha é um município do Espírito Santo, conhecido por suas belas praias,
+    pelo Convento da Penha, pela cultura capixaba e por sua importância histórica.
+  </p>
+
+  <!-- ================= IMAGEM DA CIDADE ================= -->
+  <img src="../img/vila-velha.jpg"
+       alt="Vista da cidade de Vila Velha"
+       width="600">
+
+  <!--
+    src="../img/vila-velha.jpg"
+      → sobe um nível (sai de cidades/)
+      → entra na pasta img/
+      → pega vila-velha.jpg
+  -->
+
+  <hr>
+
+  <!-- ================= DOWNLOADS ================= -->
+
+  <p>
+    Para você conhecer mais sobre a cidade de Vila Velha,
+    <a href="../arquivos/documento-vila-velha.doc"
+       download="documento-vila-velha.doc"
+       type="application/msword">
+      clique aqui para baixar um documento
+    </a>.
+  </p>
+
+  <p>
+    <a href="../arquivos/guia-vila-velha.pdf"
+       download="guia-vila-velha.pdf"
+       type="application/pdf">
+      Clique aqui para baixar um guia turístico da cidade de Vila Velha
+    </a>.
+  </p>
+
+  <p>
+    <a href="../arquivos/materiais-vila-velha.zip"
+       download="materiais-vila-velha.zip"
+       type="application/zip">
+      Clique aqui para baixar um arquivo ZIP com os demais materiais
+    </a>.
+  </p>
+
+ 
+</body>
+</html>
