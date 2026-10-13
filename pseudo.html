@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo seletores</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Duas divs bem separadas, cada uma com seu id */
+        #sobre {
+            background-color: lightblue;
+            border: 2px solid darkblue;
+            padding: 15px;
+            margin-bottom: 40px;
+        }
+
+        #musicas {
+            background-color: lightyellow;
+            border: 2px solid darkorange;
+            padding: 15px;
+        }
+
+        /* Pseudo-classes dos links */
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: blue;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: green;
+        }
+
+        /* Pseudo-elementos: aparece algo antes e depois do link */
+        #musicas a::before {
+            content: "♬ ";
+        }
+        #musicas a::after {
+            content: " ♬";
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sobre">
+        <h1>Pseudo seletores</h1>
+        <p>Passe o mouse sobre os links da outra caixa e a cor muda (:hover).
+        Ao clicar e segurar, a cor muda de novo (:active).</p>
+    </div>
+
+    <div id="musicas">
+        <h2>Ouça música</h2>
+        <p><a href="https://open.spotify.com" target="_blank">Spotify</a></p>
+        <p><a href="https://www.youtube.com" target="_blank">YouTube</a></p>
+        <p><a href="https://music.amazon.com.br" target="_blank">Amazon Music</a></p>
+    </div>
+
+    <p><a href="index.html">voltar para o índice</a></p>
+
+</body>
+</html>
