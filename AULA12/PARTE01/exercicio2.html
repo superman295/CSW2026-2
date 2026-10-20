@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - flex-grow</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* flex-grow: 1 em todos os itens, então dividem o espaço igualmente */
+        .item {
+            flex-grow: 1;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin: 5px;
+        }
+
+        /* Ao passar o mouse, cada item fica com uma cor diferente */
+        .item1:hover {
+            background-color: tomato;
+        }
+        .item2:hover {
+            background-color: steelblue;
+        }
+        .item3:hover {
+            background-color: seagreen;
+        }
+
+        /* Traço embaixo ao passar o mouse */
+        .item:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercício 2</h1>
+    <p>Três itens com flex-grow: 1. Passe o mouse em cima de cada um.</p>
+
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+    </div>
+
+    <p><a href="index.html">&lt;&lt; voltar para o índice</a></p>
+
+</body>
+</html>

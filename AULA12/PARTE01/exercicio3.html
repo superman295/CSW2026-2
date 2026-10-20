@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - flex-grow no terceiro item</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .item {
+            flex-grow: 1;
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin: 5px;
+        }
+
+        /* O terceiro item cresce duas vezes mais e tem cor diferente */
+        .item3 {
+            flex-grow: 2;
+            background-color: tomato;
+        }
+
+        /* Ao clicar no terceiro item, ele fica de outra cor.
+           O :focus mantém a cor depois do clique (até clicar em outro lugar) */
+        .item3:active,
+        .item3:focus {
+            background-color: gold;
+            color: black;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercício 3</h1>
+    <p>Cinco itens. O terceiro cresce duas vezes mais. Clique nele.</p>
+
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item item3" tabindex="0">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <p><a href="index.html">&lt;&lt; voltar para o índice</a></p>
+
+</body>
+</html>
