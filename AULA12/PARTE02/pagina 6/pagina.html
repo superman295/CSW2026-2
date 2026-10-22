@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento no Eixo Transversal</title>
+    <link rel="stylesheet" href="pagina6.css">
+</head>
+<body>
+
+    <h1>Alinhamento no Eixo Transversal <span>(align-items)</span></h1>
+    <h2>Controla o alinhamento dos itens no eixo secundário (vertical, se a direção for row).
+    Essencial para centralizar elementos de alturas diferentes.</h2>
+
+    <div class="quadro">
+
+        <div class="coluna">
+            <p>flex-start</p>
+            <div class="container flex-start">
+                <div class="item pequeno"></div>
+                <div class="item grande"></div>
+                <div class="item medio"></div>
+            </div>
+        </div>
+
+        <div class="coluna">
+            <p>center</p>
+            <div class="container center">
+                <div class="item pequeno"></div>
+                <div class="item grande"></div>
+                <div class="item medio"></div>
+            </div>
+        </div>
+
+        <div class="coluna">
+            <p>stretch</p>
+            <div class="container stretch">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+
+        <div class="coluna">
+            <p>flex-end</p>
+            <div class="container flex-end">
+                <div class="item pequeno"></div>
+                <div class="item grande"></div>
+                <div class="item medio"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
