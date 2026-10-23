@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    margin: 20px;
+}
+
+h1 {
+    color: #0b2447;
+}
+
+h1 span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+h2 {
+    color: #0b2447;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+p {
+    color: #0b2447;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0 5px 0;
+}
+
+/* Container flexbox: a barra azul escura */
+.container {
+    display: flex;
+    background-color: #062244;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+/* Itens: os quadrados laranja */
+.item {
+    width: 55px;
+    height: 55px;
+    background-color: darkorange;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
